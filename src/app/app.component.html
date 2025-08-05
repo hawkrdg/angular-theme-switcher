@@ -1,0 +1,61 @@
+@if (showApp()) {
+  <mat-sidenav-container class="wrapper">
+    <mat-sidenav-content>
+      <mat-toolbar>
+        <app-theme-switcher></app-theme-switcher>
+
+        <h2>{{title}}</h2>
+
+        <div class="loginCtrl">
+          Smaller Text
+        </div>
+      </mat-toolbar>
+
+      <div class="mainContent">
+        <div class="buttonsContainer">
+          <h2 class="centered">Buttons...</h2>
+          <button mat-button>Basic</button>
+          <button mat-raised-button>Raised</button>
+          <button mat-fab>Fab</button>
+          <button mat-mini-fab>
+            <mat-icon>print</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>home</mat-icon>
+          </button>
+        </div>
+  
+        <div class="widgetsContainer">
+          <h2 class="centered">Widgets...</h2>
+          <p>
+            Progress Bar
+          </p>
+          <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+          <p>
+            Working: 
+          </p>
+          <mat-spinner diameter="50"></mat-spinner>
+          <p>
+            <mat-radio-group value="2" aria-label="Select an option">
+              <mat-radio-button value="1">Option 1</mat-radio-button>
+              <mat-radio-button value="2">Option 2</mat-radio-button>
+            </mat-radio-group>
+          </p>
+          <p><mat-slide-toggle>Slide me!</mat-slide-toggle></p>
+        </div>
+  
+        <div class="textContainer">
+          <h2 class="centered">Text...</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a cursus leo, a gravida turpis. Phasellus ac viverra neque. Maecenas quis quam convallis, ultricies nibh in, ultricies dui. Aliquam semper enim et dui fermentum sodales. Cras ac justo ultricies diam dictum ullamcorper. Nunc id erat id nisi congue efficitur ultrices sed est. Curabitur ut tincidunt est, vitae laoreet tortor. Aenean pellentesque maximus mi, quis vehicula ligula commodo non. Sed in est   consectetur, mollis massa non, pellentesque odio.
+          </p>
+          <p>
+            Phasellus ullamcorper nec enim quis aliquam. Duis pulvinar et arcu pellentesque efficitur. Suspendisse vitae magna gravida, pulvinar tortor vitae, accumsan libero. Nulla non iaculis nibh. Sed consectetur pretium semper. Aenean sit amet tellus justo.
+          </p>
+        </div>
+      </div>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+}
