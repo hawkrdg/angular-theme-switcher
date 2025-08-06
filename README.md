@@ -94,4 +94,15 @@ to create a custom color scheme based on Google's Material Design spec you can u
 ```
 You must supply a hex 'primary' color and optionally hex colors for 'secondary', 'tertiary', and 'neutral' palettes. This yields a 'custom-theme.scss' file.
 
+below are both the light and dark color swatches for the custom 'blueGreyTheme':
+
+
+![blueGreyLight colors](./src/app/theme-switcher/themes/blue-grey-light.png "BlueGreyLight")
+
+
+
+![blueGreyDark colors](./src/app/theme-switcher/themes/blue-grey-dark.png "BlueGreyDark")
+
+
+
 Enjoy. You can view this app at https://hawkrdg.com/sandbox4
