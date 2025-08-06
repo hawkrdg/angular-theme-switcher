@@ -62,13 +62,11 @@ export class ThemeSwitcherComponent {
 
   setTheme = (ev) => {
     console.log(`setTheme(): ${ev.value}`);
-    const themeClassEl: any = document.getElementsByTagName('body')[0]
-    const oldTheme = themeClassEl.classList[0];
-    if (oldTheme) {
-      themeClassEl.classList.replace(oldTheme, this.currentTheme());
-    } else {
-      themeClassEl.classList.add(this.currentTheme());
-    }
+    const themeClassEl: any = document.getElementsByTagName('body')[0];
+
+    themes.forEach(t => themeClassEl.classList.remove(t));
+
+    themeClassEl.classList.add(this.currentTheme());
     localStorage.setItem('theme', this.currentTheme());
   }
 
